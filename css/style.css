@@ -4,9 +4,15 @@ svg {
     z-index: 10;
 }
 
+.sec {
+    background: url(../img/11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .head {
     font-family: 'Bellefair', serif;
-    background: #1f1f1f;
+    /*    background: #1f1f1f;*/
     width: 100%;
     min-width: 100%;
 }
@@ -24,14 +30,28 @@ svg {
     font-family: 'Eczar', serif;
 }
 
+#info img {
+    -vendor-animation-duration: 3s;
+    -vendor-animation-delay: 2s;
+    -vendor-animation-iteration-count: infinite;
+}
+
+.info h2 {
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
 #counter {
     text-align: center;
     color: red;
 }
 
 .events {
-    height: 100%;
-    width: 100%;
+    text-align: center;
+    font-family: 'Spectral', serif;
+    font-size: 60px;
+    letter-spacing: 3px;
 }
 
 .ppt {
@@ -45,28 +65,42 @@ svg {
 .ppt h1 {
     font-family: 'Spectral', serif;
     text-align: center;
-    padding: 10px;
-    font-size: 60px;
+    font-size: 50px;
     color: #ffe200;
 }
 
 .ppt h2 {
     text-align: center;
-    font-size: 40px;
-    color: #ffffff;
-    padding: 10px;
+    font-size: 30px;
+    color: #fd0000;
     font-family: 'Eczar', serif;
+}
+
+.ppt p {
+    color: white;
 }
 
 .roborace h2 {
     font-family: 'Catamaran', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     color: red;
 }
 
 .jam h2 {
     font-family: 'Catamaran', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
+    color: red;
+}
+
+.quiz h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+.conn h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 50px;
     color: red;
 }
 
