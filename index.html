@@ -11,10 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/moment-1.js"></script>
-    <script src="js/moment.js"></script>
-    <script src="js/timer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
     <script src="js/countUp.js"></script>
     <!--    FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
@@ -28,12 +27,14 @@
 <body>
     <section class="sec">
         <div class="container overlay-bg head">
-            <h3>
-                <center>SRI SAIRAM INSTITUTE OF TECHNOLOGY<br> DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING <br><br>Presents</center>
+            <h3 class="wow zoomInDown">
+                <center>ON AUGUST 30,2017 <br>SRI SAIRAM INSTITUTE OF TECHNOLOGY<br> DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING <br><br>Presents</center>
             </h3>
-            <svg viewBox="0 0 1000 100">
+            <p class="wow bounceIn">
+                <svg viewBox="0 0 1000 100">
 				<!-- Symbol -->
-				<symbol id="s-text"><text  text-anchor="middle"
+				<symbol id="s-text">
+				<text text-anchor="middle"
 					x="50%" y="50%" dy=".55em">Praestantia 2K17</text>
 				</symbol>
 				<!-- Duplicate symbols -->
@@ -47,7 +48,7 @@
 				></use>
 				<use xlink:href="#s-text" class="text"
 				></use>
-			</svg>
+			</svg></p>
             <center>
                 <h4 style="color:blue;">FELL THE TECH!!!</h4>
             </center>
@@ -98,7 +99,7 @@
     </section><br>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 roborace">
+            <div class="col-sm-6 roborace wow slideInLeft">
                 <center>
                     <h2>ROBORACE</h2>
                     <h3>"FOR RACERZZ"</h3>
@@ -111,7 +112,7 @@
 -->
                 </center>
             </div>
-            <div class="col-sm-6 jam">
+            <div class="col-sm-6 jam wow slideInRight">
                 <center>
                     <h2>JAM TO WIN IT</h2>
                     <h4>"It's time to tickle ur brain with circuits n electricity <br> Just charge ur brains Because JAM to win it <br>Is going to be crazy this time" (It's a Group event)</h4>
@@ -122,7 +123,7 @@
         </div><br>
         <hr>
         <div class="row">
-            <div class="col-sm-6 quiz">
+            <div class="col-sm-6 quiz wow slideInLeft">
                 <center>
                     <h2>TECHNICAL QUIZ</h2>
                     <h3>“The empire of future are the empires of mind”</h3>
@@ -133,7 +134,7 @@
 
                 </center>
             </div>
-            <div class="col-sm-6 conn">
+            <div class="col-sm-6 conn wow slideInRight">
                 <center>
                     <h2>CONNECTIONS</h2>
                     <h3>"An enthralling event to connect your neurons to complete your brain circuit!"</h3>
@@ -147,7 +148,7 @@
     <hr>
     <!-- Container (Contact Section) -->
     <div class="container"><br>
-        <h2 class="text-center"><img src="https://png.icons8.com/id-card/color/48" title="ID Card" width="48" height="48"><b>  CONTACT</b></h2><br>
+        <h2 class="text-center wow pulse infinite"><img src="https://png.icons8.com/id-card/color/48" title="ID Card" width="48" height="48"><b>  CONTACT</b></h2><br>
         <div class="row">
             <div class="col-sm-4">
                 <p><b>Contact us</b></p>
@@ -224,7 +225,6 @@
     </script>
     <script src="js/main.js"></script>
     <script src="js/countUp.js"></script>
-    <script src="js/animate.js"></script>
     <script>
         var options = {  
             useEasing: true,
@@ -232,7 +232,7 @@
               separator: ',',
               decimal: '.',
         };
-        var demo = new CountUp("views", 0, 3801, 0, 1, options);
+        var demo = new CountUp("views", 0, 3801, 0, 2, options);
         demo.start();
 
     </script>
@@ -243,7 +243,7 @@
               separator: ',',
               decimal: '.',
         };
-        var demo = new CountUp("reg", 0, 31, 0, 1, options);
+        var demo = new CountUp("reg", 0, 31, 0, 2.5, options);
         demo.start();
 
     </script>
@@ -254,8 +254,13 @@
               separator: ',',
               decimal: '.',
         };
-        var demo = new CountUp("paper", 0, 38, 0, 1, options);
+        var demo = new CountUp("paper", 0, 38, 0, 2.5, options);
         demo.start();
+
+    </script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
 
     </script>
 </body>
