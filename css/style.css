@@ -132,3 +132,12 @@ svg {
 .full-height .overlay-bg {
     display: table;
 }
+
+.social {
+    margin: 0px;
+    background-color: #656565;
+}
+
+.pad a {
+    padding: 0px 40px;
+}
