@@ -1,0 +1,73 @@
+body {}
+
+svg {
+    z-index: 10;
+}
+
+.head {
+    background: #1f1f1f;
+    width: 100%;
+    min-width: 100%;
+}
+
+.head h3 {
+    color: white;
+}
+
+.card {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.22);
+    max-width: 250px;
+    overflow: hidden;
+    background-color: #ff8122;
+}
+
+.events {
+    display: table-cell;
+}
+
+.g1 {
+    display: table-cell;
+}
+
+.g2 {
+    display: table-cell;
+}
+
+#counter {
+    text-align: center;
+    color: red;
+}
+
+.events {
+    height: 100%;
+    width: 100%;
+}
+
+.ppt {
+    opacity: 0.8;
+    margin: 0px;
+    /*    position: absolute;*/
+    max-height: 55%;
+    min-width: 100%;
+    background-size: cover;
+    background-image: url(../img/ppt.jpg);
+}
+
+.ppt h1 {
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 60px;
+    color: red;
+}
+
+.ppt h2 {
+    margin-left: 10px;
+    font-size: 40px;
+    color: green;
+    padding: 10px;
+}
+
+.bot h2 {
+    font-size: 60px;
+    color: red;
+}

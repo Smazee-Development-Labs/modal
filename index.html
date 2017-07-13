@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>PRAESTANTIA 2K17</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link rel="stylesheet" href="css/text.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/pre1.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/moment-1.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/timer.js"></script>
+</head>
+
+<body>
+    <div class="container head">
+        <h3>
+            <center>SRI SAIRAM INSTITUTE OF TECHNOLOGY<br> DEPARTMENT OF ELECTRONICS AND COMMUNICATION ENGINEERING <br><br>Presents</center>
+        </h3>
+        <svg viewBox="0 0 1000 100">
+				<!-- Symbol -->
+				<symbol id="s-text"><text  text-anchor="middle"
+					x="50%" y="50%" dy=".55em">Praestantia 2K17</text>
+				</symbol>
+				<!-- Duplicate symbols -->
+				<use xlink:href="#s-text" class="text"
+				></use>
+				<use xlink:href="#s-text" class="text"
+				></use>
+				<use xlink:href="#s-text" class="text"
+				></use>
+				<use xlink:href="#s-text" class="text"
+				></use>
+				<use xlink:href="#s-text" class="text"
+				></use>
+			</svg>
+        <center>
+            <h4 style="color:blue;">FELL THE TECH!!!</h4>
+        </center>
+        <h2 id="counter">Countdown Starts...</h2>
+    </div>
+
+    <div class="ppt"><br><br>
+        <h1> Paper Presentation</h1>
+        <h2>Last date to submit the papers: 15/8/2017</h2>
+        <br><br>
+        <p></p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 bot">
+                <center>
+                    <h2>Bot Race</h2>
+                    <p>Some description</p>
+                    <div class="card">
+                        <h3>REGISTER NOW</h3>
+                    </div>
+                </center>
+            </div>
+            <div class="col-sm-6 bot">
+                <center>
+                    <h2>Bot Race</h2>
+                    <p>Some description</p>
+                    <div class="card">
+                        <h3>REGISTER NOW</h3>
+                    </div>
+                </center>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6 bot">
+                <center>
+                    <h2>Bot Race</h2>
+                    <p>Some description</p>
+                    <div class="card">
+                        <h3>REGISTER NOW</h3>
+                    </div>
+                </center>
+            </div>
+            <div class="col-sm-6 bot">
+                <center>
+                    <h2>Bot Race</h2>
+                    <p>Some description</p>
+                    <div class="card">
+                        <h3>REGISTER NOW</h3>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Container (Contact Section) -->
+    <div class="container"><br><br><br>
+        <h2 class="text-center"><b>CONTACT</b></h2>
+        <div class="row">
+            <div class="col-sm-4">
+                <p><b>Contact us</b></p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>Sai Leo Nagar,West Tambaram, Chennai-44</p>
+                <p><span class="glyphicon glyphicon-phone"></span> +91 9578154721</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> praestantia2k17@sairamit.edu.in</p>
+            </div>
+            <div class="col-sm-4 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4" id="routebus">
+                <center>Download Route Bus Time Table</center>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 30, 2017 10:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("counter").innerHTML = days + " days | " + hours + " hours | " +
+                minutes + " minutes | " + seconds + " seconds more..";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("counter").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+/* Main styles */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+#d-text {}
+
+.text {
+    fill: none;
+    stroke-width: 1;
+    stroke-linejoin: round;
+    stroke-dasharray: 70 330;
+    stroke-dashoffset: 0;
+    -webkit-animation: stroke 6s infinite linear;
+    animation: stroke 6s infinite linear;
+    background-size: .2em;
+    background-color: #fff;
+    font: 5em/1 Open Sans, Impact;
+    text-transform: uppercase;
+}
+
+.text:nth-child(5n + 1) {
+    stroke: #3369e8;
+    /* Google Blue */
+    -webkit-animation-delay: -1.2s;
+    animation-delay: -1.2s;
+}
+
+.text:nth-child(5n + 2) {
+    stroke: #d50f25;
+    /* Google Red */
+    -webkit-animation-delay: -2.4s;
+    animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+    stroke: #fff;
+    /* 	Violet */
+    -webkit-animation-delay: -3.6s;
+    animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+    stroke: #eeb211;
+    /* Google Yellow */
+    -webkit-animation-delay: -4.8s;
+    animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+    stroke: #009925;
+    /* Google Green*/
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: -400;
+    }
+}
