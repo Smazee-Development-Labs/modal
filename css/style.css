@@ -141,3 +141,33 @@ svg {
 .pad a {
     padding: 0px 40px;
 }
+
+@media only screen and (min-width: 400px) {
+    .pad a {
+        padding: 0px 0px;
+    }
+}
+
+.register {
+    max-width: 500px;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.register .row {
+    padding: 1%;
+}
+
+.register h5 {
+    padding: 10px;
+    color: white;
+    border-color: rgba(0, 51, 188, 0.88);
+    max-width: 100px;
+    background-color: rgba(0, 69, 255, 0.78);
+}
+
+.register h5:hover {
+    padding: 10px;
+    max-width: 100px;
+    background-color: rgba(0, 51, 188, 0.88);
+    color: white;
+}

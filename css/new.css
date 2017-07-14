@@ -1,0 +1,19 @@
+nav .input-field {
+    margin: 0;
+    height: 100%;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.input-field.inline {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+lable {
+    font-size: 25px;
+}
