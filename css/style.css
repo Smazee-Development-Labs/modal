@@ -1,3 +1,10 @@
+.vedios {
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('../img/produce_1.mp4') no-repeat;
+}
+
 body {}
 
 svg {
@@ -5,13 +12,15 @@ svg {
 }
 
 .sec {
+    position: relative;
     background: url(../img/11.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .sec-ppt {
-    background: url(../img/ppt.jpg);
+    background: url(../img/ppt2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -30,10 +39,6 @@ svg {
 
 .card {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.22);
-    max-width: 250px;
-    overflow: hidden;
-    background-color: #157F1F;
-    font-family: 'Eczar', serif;
 }
 
 #info img {
@@ -92,6 +97,7 @@ svg {
     background: url("../img/bot.png") no-repeat center; 
 }
 */
+
 
 /*
 .roborace img {
@@ -189,9 +195,9 @@ svg {
 /* ================ The Timeline ================ */
 
 .timeline {
+/*    margin-left: 500px;*/
     position: relative;
-    width: 660px;
-    margin: 0 auto;
+    width: 660px;margin: 0 auto;
     margin-top: 20px;
     padding: 1em 0;
     list-style-type: none;
@@ -471,4 +477,31 @@ svg {
 
 .con {
     margin: 0px 50px;
+}
+
+.bg-img {
+    margin: 0;
+    background: url("https://dl.dropboxusercontent.com/u/19146959/Codepen/cornchip/bg.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}.bg-img1 {
+    margin: 0;
+    background: url("../img/colck.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#story {
+/*    margin-left: 500px;*/
+}
+
+.padd {
+    margin: 0 auto;
+    margin-left: -50px;
+}
+
+.logo {
+    text-align: right;
+    max-height: 100px;
+    max-width: 100px;
 }
