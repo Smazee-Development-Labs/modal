@@ -16,6 +16,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"></script>
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/set1.css">
 
     <script src="js/wow.min.js"></script>
     <script src="js/countUp.js"></script>
@@ -73,7 +74,10 @@
             <div class="row info" id="info">
                 <div class="col-sm-3">
                     <center>
-                        <h2 ><a href="http://www.praestantia.in" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=https://smazee-development-labs.github.io/modal/&digit=style/plain/3/&reloads=0" alt="" title="" border="0"></a><br /><a href="http://" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a></h2>
+                        <h2>
+                            <a href="http://www.praestantia.in" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=https://smazee-development-labs.github.io/modal/&digit=style/plain/3/&reloads=0" alt="" title="" border="0"></a><br />
+                            <a href="http://" target="_blank" style="font-family: Geneva, Arial; font-size: 9px; color: #330010; text-decoration: none;"></a>
+                        </h2>
                         <h2>VIEWS</h2>
                     </center>
                 </div>
@@ -156,13 +160,19 @@
     </div>
     <hr>
     <!-- section begin -->
-    <section class="bg-img">
+    <section class="bg-img content">
         <div class="container register">
             <center>
                 <h2 class="wow pulse infinite" style="color:white;"><img src="https://png.icons8.com/edit-property/ultraviolet/40" title="Edit Property" width="40" height="40"><b> REGISTER SOON</b></h2>
             </center>
+
             <div class="row">
-                <input class="form-control" type="text" name="name" id="name" placeholder="Name">
+                <span class="input input--hoshi">
+					<input class="input__field input__field--hoshi" type="text" id="input-4" />
+					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+						<span class="input__label-content input__label-content--hoshi"><b style="color:white;,">Name</b></span>
+                </label>
+                </span>
             </div>
             <div class="row">
                 <input class="form-control" type="email" name="email" id="email" placeholder="Email">
@@ -304,12 +314,8 @@
                     <a href="facebook.com"><img src="https://png.icons8.com/twitter/color/48" title="Twitter" width="48" height="48"></a>
                 </div>
             </center>
-<<<<<<< HEAD
-=======
-		
-
->>>>>>> 0b3e07f9161250a844a95b96a507c7fc240ef176
-        </div><br></section>
+        </div><br>
+    </section>
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("Aug 30, 2017 10:00:00").getTime();
@@ -381,7 +387,43 @@
 
     </script>
     <script src="js/materialize.js"></script>
+    <script src="js/classie.js"></script>
+    <script>
+        (function() {
+            // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+            if (!String.prototype.trim) {
+                (function() {
+                    // Make sure we trim BOM and NBSP
+                    var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                    String.prototype.trim = function() {
+                        return this.replace(rtrim, '');
+                    };
+                })();
+            }
 
+            [].slice.call(document.querySelectorAll('input.input__field')).forEach(function(inputEl) {
+                // in case the input is already filled..
+                if (inputEl.value.trim() !== '') {
+                    classie.add(inputEl.parentNode, 'input--filled');
+                }
+
+                // events:
+                inputEl.addEventListener('focus', onInputFocus);
+                inputEl.addEventListener('blur', onInputBlur);
+            });
+
+            function onInputFocus(ev) {
+                classie.add(ev.target.parentNode, 'input--filled');
+            }
+
+            function onInputBlur(ev) {
+                if (ev.target.value.trim() === '') {
+                    classie.remove(ev.target.parentNode, 'input--filled');
+                }
+            }
+        })();
+
+    </script>
 </body>
 
 </html>
