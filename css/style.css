@@ -472,11 +472,9 @@ svg {
     letter-spacing: 2px;
 }
 
-.con {
-    margin: 0px 0px;
+.con {background-image: url("../img/tex.jpg");
     padding: 0px 50px;
 
-    background-repeat: no-repeat;
 
 }
 
