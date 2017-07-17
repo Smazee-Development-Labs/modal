@@ -177,12 +177,13 @@ svg {
 }
 
 .register {
-    max-width: 500px;
+    margin: 5px;
+/*        max-width: 500px;*/
     font-family: 'Catamaran', sans-serif;
 }
 
 .register .row {
-    padding: 1%;
+
 }
 
 .register h5 {
@@ -492,7 +493,7 @@ svg {
 
 .bg-img {
     margin: 0;
-    background: url("../img/bg-img.jpg") no-repeat;
+    background: url("../img/bg-reg.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
 }
@@ -505,7 +506,7 @@ svg {
 }
 
 #story {
-    /*    margin-left: 500px;*/
+/*        margin-left: 500px;*/
 }
 
 .padd {
@@ -568,4 +569,9 @@ svg {
     .jam {
         left: 0px;
     }
+}
+
+.apple {
+    max-height: 600px;
+    max-width: 600px;
 }
