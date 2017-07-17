@@ -1,4 +1,6 @@
-body {}
+body {
+    overflow-x: hidden;
+}
 
 svg {
     z-index: 10;
@@ -32,6 +34,7 @@ svg {
 
 .card {
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15), 0 4px 20px 0 rgba(0, 0, 0, 0.22);
+    background-color: aliceblue;
 }
 
 #info img {
@@ -64,9 +67,18 @@ svg {
 .ppt {
     opacity: 0.8;
     margin: 0px;
-    /*    position: absolute;*/
     max-height: 55%;
     min-width: 100%;
+}
+
+.ppt p {
+    padding: 0px 75px;
+}
+
+@media only screen and (max-width: 700px) {
+    .ppt p {
+        padding: 0px 20px;
+    }
 }
 
 .ppt h1 {
@@ -192,9 +204,10 @@ svg {
 /* ================ The Timeline ================ */
 
 .timeline {
-/*    margin-left: 500px;*/
+    /*    margin-left: 500px;*/
     position: relative;
-    width: 660px;margin: 0 auto;
+    width: 660px;
+    margin: 0 auto;
     margin-top: 20px;
     padding: 1em 0;
     list-style-type: none;
@@ -472,10 +485,9 @@ svg {
     letter-spacing: 2px;
 }
 
-.con {background-image: url("../img/tex.jpg");
+.con {
+    background-image: url("../img/tex.jpg");
     padding: 0px 50px;
-
-
 }
 
 .bg-img {
@@ -483,7 +495,9 @@ svg {
     background: url("https://dl.dropboxusercontent.com/u/19146959/Codepen/cornchip/bg.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
-}.bg-img1 {
+}
+
+.bg-img1 {
     margin: 0;
     background: url("../img/colck.jpg") no-repeat;
     background-size: cover;
@@ -491,7 +505,7 @@ svg {
 }
 
 #story {
-/*    margin-left: 500px;*/
+    /*    margin-left: 500px;*/
 }
 
 .padd {
@@ -505,12 +519,53 @@ svg {
     max-width: 100px;
 }
 
+@media only screen and (max-width: 550px) {
+    .logo {
+        text-align: right;
+        max-height: 50px;
+        max-width: 50px;
+    }
+}
+
 .roborace {
     left: -10px;
 }
+
 @media only screen and (max-width: 775px) {
     .roborace {
-    left: 0px;
+        left: 0px;
+    }
 }
-    
+
+.sec-tex-bg {
+    background-image: url(../img/default_wallpaper.png);
+}
+
+@media only screen and (max-width: 500px) {
+    .dept-head {
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sairam-logo {
+        height: 50%;
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .info h2 {
+        font-size: small;
+    }
+}
+
+.quiz {
+    margin-left: -10px;
+}
+
+@media only screen and (max-width: 775px) {
+    .jam {
+        left: 0px;
+    }
 }
