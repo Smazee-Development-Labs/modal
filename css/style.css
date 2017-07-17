@@ -492,7 +492,7 @@ svg {
 
 .bg-img {
     margin: 0;
-    background: url("https://dl.dropboxusercontent.com/u/19146959/Codepen/cornchip/bg.jpg") no-repeat;
+    background: url("../img/bg-img.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
 }
