@@ -68,9 +68,11 @@
 				></use>
 			</svg></p>
             <center>
-                <h4 style="color:white;">THE TOUCH OF NEW WORLD!!!</h4>
+                <h4 style="color:white;">THE TOUCH OF A NEW WORLD!!!</h4>
+                <br>
+                <h2 style="color:red;">ON AUGUST 30,2017</h2>
             </center><br>
-            <h2 id="counter">ON AUGUST 30,2017</h2>
+
             <div class="row info" id="info">
                 <div class="col-sm-3">
                     <center>
@@ -110,6 +112,7 @@
                 <h2>Last date to submit the papers: <b style="color:red;">18/8/2017</b></h2>
                 <center>
                     <h3 style="color:white">Date of Intimation: 23/8/2017</h3>
+                    <p><b>TOPICS:</b>VLSI & Signal Processing | Smart Antenna | Medical Imaging | MEMS | Networking | COgnitive Radio</p>
                 </center>
                 <p><b>The following rules should be followed while submitting your paper:</b><br> 1. It is madatory that, your paper should be in the IEEE format. <br> 2. A paper can be submitted , representing a maximum of two members. <br>3. The paper must be submitted only to the above mentioned mail Id.
                 </p>
@@ -134,7 +137,7 @@
                 <div class="col-sm-6 card jam wow slideInRight" style="left:10px;">
                     <center>
                         <h2>JAM TO WIN IT</h2>
-                        <h4>"It's time to tickle your brain with circuits n electricity <br> Just charge ur brains Because JAM to win it <br>Is going to be crazy this time" (It's a Group event)</h4>
+                        <h4>"It's time to tickle your brain with circuits and electricity <br> Just charge your brains Because JAM to win it <br>Is going to be crazy this time" (It's a Group event)</h4>
                         <p style="text-align:left;"><b>Round 1:</b>The jumbled words are given to the contestants in which contestants can form groups(max 3 min 2 in a group) each active must try to find or crack the jumbled /mind tricky games in A MINUTE <br><b>Round 2:</b>The active minds are moved to the next round in which 2 words are given to a group within a given period of time to prepare he /she must link the 2 words and try to innovate something out of it Which should be practically acceptable each group members are given 5 MINUTES TO PREPARE. <br> <b>Round 3:</b>Electrocuted minds which are qualified for this round may relax and take a dumbsharad round based on the circuit selected by a member of the group and enact their circuit they got or try to find the technical word take by the team member</p>
                     </center>
                 </div>
@@ -169,14 +172,16 @@
     <section class="bg-img content">
         <div class="container register">
             <div class="row">
-                <div class="col-sm-6">
-                    <h1 class="text-center">RULES AND REGULATIONS</h1>
-                    <ul>
+                <h2 id="counter">ON AUGUST 30,2017</h2>
+                <div class="col-sm-6" style="color:white;">
+                    <h1 class="text-center rules">RULES AND REGULATIONS</h1><br>
+                    <ul style="font-size:20px;">
                         <li>
                             The Participants should come only in formals.
                         </li>
                         <li>Cell phone are not allowedd inside the campus</li>
                         <li>Participants should bring ID card of their college.</li>
+                        <li>Paricipants can participate a maximum of two events excluding ppt</li>
                     </ul>
                 </div>
                 <div class="col-sm-6">
@@ -196,19 +201,21 @@
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
 						<span class="input__label-content input__label-content--hoshi"><b style="color:white;">Email</b></span>
                     </label>
-                    </span> <span class="input input--hoshi">
+                    </span><span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="phone" name="phone"  id="input-4 phone">
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
 						<span class="input__label-content input__label-content--hoshi"><b style="color:white;">Phone</b></span>
                     </label>
-                    </span><span class="input input--hoshi">
+                    </span>
+                    <span class="input input--hoshi">
 					<input class="input__field input__field--hoshi" type="text" name="college"  id="input-4 clg">
 					<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
-						<span class="input__label-content input__label-content--hoshi"><b style="color:white;">Name of College</b></span>
+						<span class="input__label-content input__label-content--hoshi"><b style="color:white;">Name of College and Department</b></span>
                     </label>
                     </span>
-                    <div class="row">
-                        <div class="col-md-6" style="padding-left: 5px;">
+                    <center>
+                        <div class="row year text-center">
+
                             <select class="form-control" type="text" name="year" id="year" placeholder="Year">
                                 <option>IV</option>
                                 <option>III</option>
@@ -216,17 +223,12 @@
                                  <option>I</option>
                                             </select>
                         </div>
-                        <div class="col-md-6" style="padding-right: 5px;">
-                            <select class="form-control" type="text" name="dept" id="dept" placeholder="Department">
-                                                <option>ECE</option>
-                                                <option>CSE</option>
-                                                <option>EEE</option>
-                                                <option>IT</option>
-                                                <option>OTHERS</option>
-                                            </select>
-                        </div>
-
-                    </div>
+                    </center> <br>
+                    <div class="row text-center" style="color:white;">
+                        <input type="checkbox" name="tech" value="roborace" /> RoboRace
+                        <input type="checkbox" name="tech" value="jamtowinit" /> Jam to win it
+                        <input type="checkbox" name="tech" value="quiz" /> Technical Quiz
+                        <input type="checkbox" name="tech" value="connections" /> Connections</div>
                     <center>
                         <div class="row buton">
                             <a href="#">
@@ -359,8 +361,8 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Output the result in an element with id="demo"
-            document.getElementById("counter").innerHTML = days + " days | " + hours + " hours | " +
-                minutes + " minutes | " + seconds + " seconds more..";
+            document.getElementById("counter").innerHTML = "Just " + days + " days | " + hours + " hours | " +
+                minutes + " minutes | " + seconds + " seconds more...";
 
             // If the count down is over, write some text 
             if (distance < 0) {
@@ -382,6 +384,19 @@
         };
         var demo = new CountUp("views", 0, 3801, 0, 2, options);
         demo.start();
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("input[name='tech']").change(function() {
+                var maxAllowed = 2;
+                var cnt = $("input[name='tech']:checked").length;
+                if (cnt > maxAllowed) {
+                    $(this).prop("checked", "");
+
+                }
+            });
+        });
 
     </script>
     <script>

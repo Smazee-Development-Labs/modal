@@ -114,27 +114,27 @@ svg {
 }*/
 
 .roborace h2 {
-    font-family: 'Catamaran', sans-serif;
+    font-family: Georgia;
+    color: #1290ff;
     font-size: 50px;
-    color: red;
 }
 
 .jam h2 {
-    font-family: 'Catamaran', sans-serif;
+    font-family: Georgia;
+    color: #1290ff;
     font-size: 50px;
-    color: red;
 }
 
 .quiz h2 {
-    font-family: 'Catamaran', sans-serif;
+    font-family: Georgia;
+    color: #1290ff;
     font-size: 50px;
-    color: red;
 }
 
 .conn h2 {
-    font-family: 'Catamaran', sans-serif;
+    font-family: Georgia;
+    color: #1290ff;
     font-size: 50px;
-    color: red;
 }
 
 .roborace p {
@@ -178,13 +178,11 @@ svg {
 
 .register {
     margin: 5px;
-/*        max-width: 500px;*/
+    /*        max-width: 500px;*/
     font-family: 'Catamaran', sans-serif;
 }
 
-.register .row {
-
-}
+.register .row {}
 
 .register h5 {
     padding: 10px;
@@ -506,7 +504,7 @@ svg {
 }
 
 #story {
-/*        margin-left: 500px;*/
+    /*        margin-left: 500px;*/
 }
 
 .padd {
@@ -571,7 +569,11 @@ svg {
     }
 }
 
-.apple {
-    max-height: 600px;
-    max-width: 600px;
+.year {
+    align-content: center;
+    width: 200px;
+}
+
+.rules {
+    color: #03c4ff;
 }
